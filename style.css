@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: hsl(210, 46%, 95%);
+    height: 100vh;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    width: 80%;
+    color: #fff;
+    grid-gap: 1rem;
+}
+
+/* names of people */
+.head {
+    display: flex;
+}
+
+/* names of people */
+.headtext {
+    margin-left: 1rem;
+}
+
+/* padding for middle  */
+h2 {
+    padding-top: 1rem;
+    font-weight: 600;
+}
+
+/* padding for bottom  */
+p {
+    padding-top: 1rem;
+    font-weight: 500;
+}
+
+.text1 {
+    background-color: hsl(263, 55%, 52%);
+    grid-column: span 2;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 8px 8px 30px hsl(0, 5%, 50%);
+}
+
+.text2 {
+    background-color: hsl(217, 19%, 35%);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.text3 {
+    background-color: hsl(0, 0%, 100%);
+    grid-row: span 2;
+    color: #000;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 8px 8px 30px hsl(0, 5%, 50%);
+}
+
+.text4 {
+    background-color: hsl(0, 0%, 100%);
+    color: #000;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 8px 8px 30px hsl(0, 5%, 50%);
+}
+
+.text5 {
+    background-color: hsl(219, 29%, 14%);
+    grid-column: span 2;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+img {
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 1024px) {
+    .container {
+        width: 100%;
+        padding: 2rem;
+    }
+
+    body {
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .text4 {
+        grid-column: span 2;
+    }
+}
+
+@media only screen and (max-width: 481px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .text2,
+    .text3 {
+        grid-column: span 2;
+    }
+}
